@@ -1,0 +1,20 @@
+1)venv\Scripts\activate
+python app.py//start server
+
+2)POST http://127.0.0.1:5000/student-verification
+Body → form-data
+Key	Type	Value
+live_image	File	Student live selfie
+id_card_image	File	Student ID card image
+college_name	Text	Govt. College of Engineering Chandrapur
+prn	Text	2023033700225471
+
+3)POST http://127.0.0.1:5000/owner-verification
+
+Key	Type	Value
+live_image	File	Owner live selfie
+pan_image	File	PAN card image
+owner_name	Text	SHEKHAR NITIN SIDHAMUKHE
+pan_number	Text	RKCPS1431L
+
+ctr + c to close server
