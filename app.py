@@ -1060,7 +1060,9 @@ def py(val):
         pass
     return val
 
-
+@app.get("/")
+def root():
+    return {"message": "API is running"}
 # =========================================================
 # STUDENT VERIFICATION API
 # =========================================================
